@@ -21,11 +21,14 @@ const simbolos = [
   ')',
 ];
 
+const mesclarConteudos = (conteudos) => conteudos.join('\n');
+const separarPorLinhas = (todoConteudo) => todoConteudo.split('\n');
+
 fn.lerDiretorio(caminho)
   .then(fn.elementosTerminadosCom('.srt'))
   .then(fn.lerArquivosSRT)
-  .then((conteudos) => conteudos.join('\n'))
-  .then((todoConteudo) => todoConteudo.split('\n'))
+  .then(mesclarConteudos)
+  .then(separarPorLinhas)
   .then(fn.removerElementosSeVazio)
   .then(fn.removerElementosSeIncluir('-->'))
   .then(fn.removerElementosSeApenasNumero)
