@@ -13,10 +13,12 @@ function lerDiretorio(caminho) {
   });
 }
 
-function elementosTerminadosCom(array, padraoTextual) {
+function elementosTerminadosCom(padraoTextual) {
   /* const regex = new RegExp(`\\b${padraoTextual}$\\b`);
   return array.filter((el) => regex.test(el)); */
-  return array.filter((el) => el.endsWith(padraoTextual));
+  return function (array) {
+    return array.filter((el) => el.endsWith(padraoTextual));
+  };
 }
 
 function lerArquivo(caminho) {
@@ -30,19 +32,21 @@ function lerArquivo(caminho) {
   });
 }
 
-function lerArquivos(caminhos) {
+function lerArquivosSRT(caminhos) {
   return Promise.all(caminhos.map(lerArquivo));
 }
 
-function removerSeVazio(array) {
+function removerElementosSeVazio(array) {
   return array.filter((el) => el.trim());
 }
 
-function removerSeIncluir(array, padraoTextual) {
-  return array.filter((el) => !el.includes(padraoTextual));
+function removerElementosSeIncluir(padraoTextual) {
+  return function (array) {
+    return array.filter((el) => !el.includes(padraoTextual));
+  };
 }
 
-function removerSeApenasNumero(array) {
+function removerElementosSeApenasNumero(array) {
   return array.filter((el) => {
     const num = parseInt(el.trim());
     return num !== num;
@@ -52,8 +56,8 @@ function removerSeApenasNumero(array) {
 module.exports = {
   lerDiretorio,
   elementosTerminadosCom,
-  lerArquivos,
-  removerSeVazio,
-  removerSeIncluir,
-  removerSeApenasNumero,
+  lerArquivosSRT,
+  removerElementosSeVazio,
+  removerElementosSeIncluir,
+  removerElementosSeApenasNumero,
 };
