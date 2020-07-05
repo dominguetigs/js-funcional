@@ -9,4 +9,6 @@ fn.lerDiretorio(caminho)
   .then((conteudos) => conteudos.join('\n'))
   .then((todoConteudo) => todoConteudo.split('\n'))
   .then((linhas) => fn.removerSeVazio(linhas))
+  .then((linhas) => fn.removerSeIncluir(linhas, '-->'))
+  .then((linhas) => fn.removerSeApenasNumero(linhas))
   .then((arquivos) => console.log(arquivos));
