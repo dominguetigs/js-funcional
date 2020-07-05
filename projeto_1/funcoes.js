@@ -77,6 +77,21 @@ function separarTextoPor(simbolo) {
   };
 }
 
+function agruparElementos(elementos) {
+  return Object.values(
+    elementos.reduce((accumulator, currentValue) => {
+      const elemento = currentValue.toLowerCase();
+      const quantidade = accumulator[elemento]
+        ? accumulator[elemento].quantidade + 1
+        : 1;
+
+      accumulator[elemento] = { elemento, quantidade };
+
+      return accumulator;
+    }, {})
+  );
+}
+
 module.exports = {
   lerDiretorio,
   elementosTerminadosCom,
@@ -87,4 +102,5 @@ module.exports = {
   removerSimbolos,
   mesclarElementos,
   separarTextoPor,
+  agruparElementos,
 };
