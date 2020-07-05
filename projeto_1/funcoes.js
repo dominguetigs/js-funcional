@@ -13,10 +13,10 @@ function lerDiretorio(caminho) {
   });
 }
 
-function elementosTerminadosCom(array, padrao) {
-  /* const regex = new RegExp(`\\b${padrao}$\\b`);
+function elementosTerminadosCom(array, padraoTextual) {
+  /* const regex = new RegExp(`\\b${padraoTextual}$\\b`);
   return array.filter((el) => regex.test(el)); */
-  return array.filter((el) => el.endsWith(padrao));
+  return array.filter((el) => el.endsWith(padraoTextual));
 }
 
 function lerArquivo(caminho) {
