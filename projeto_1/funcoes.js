@@ -92,6 +92,15 @@ function agruparElementos(elementos) {
   );
 }
 
+function ordenarPorAtributoNumerico(atributo, ordem = 'asc') {
+  return function (array) {
+    const asc = (objeto1, objeto2) => objeto1[atributo] - objeto2[atributo];
+    const desc = (objeto1, objeto2) => objeto2[atributo] - objeto1[atributo];
+
+    return array.sort(ordem === 'asc' ? asc : desc);
+  };
+}
+
 module.exports = {
   lerDiretorio,
   elementosTerminadosCom,
@@ -103,4 +112,5 @@ module.exports = {
   mesclarElementos,
   separarTextoPor,
   agruparElementos,
+  ordenarPorAtributoNumerico,
 };

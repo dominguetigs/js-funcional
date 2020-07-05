@@ -35,4 +35,5 @@ fn.lerDiretorio(caminho)
   .then(fn.removerElementosSeVazio)
   .then(fn.removerElementosSeApenasNumero)
   .then(fn.agruparElementos)
+  .then(fn.ordenarPorAtributoNumerico('quantidade', 'desc'))
   .then(console.log);
