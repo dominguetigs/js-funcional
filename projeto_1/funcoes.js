@@ -15,15 +15,7 @@ function lerDiretorio(caminho) {
   });
 }
 
-function elementosTerminadosCom(padraoTextual) {
-  /* const regex = new RegExp(`\\b${padraoTextual}$\\b`);
-  return array.filter((el) => regex.test(el)); */
-  return function (array) {
-    return array.filter((el) => el.endsWith(padraoTextual));
-  };
-}
-
-function lerArquivo(caminho) {
+function _lerArquivo(caminho) {
   return new Promise((resolve, reject) => {
     try {
       const conteudo = fs.readFileSync(caminho, { encoding: 'utf-8' });
@@ -35,7 +27,15 @@ function lerArquivo(caminho) {
 }
 
 function lerArquivosSRT(caminhos) {
-  return Promise.all(caminhos.map(lerArquivo));
+  return Promise.all(caminhos.map(_lerArquivo));
+}
+
+function elementosTerminadosCom(padraoTextual) {
+  /* const regex = new RegExp(`\\b${padraoTextual}$\\b`);
+  return array.filter((el) => regex.test(el)); */
+  return function (array) {
+    return array.filter((el) => el.endsWith(padraoTextual));
+  };
 }
 
 function removerElementosSeVazio(array) {
@@ -101,8 +101,8 @@ function ordenarPorAtributoNumerico(atributo, ordem = 'asc') {
 
 module.exports = {
   lerDiretorio,
-  elementosTerminadosCom,
   lerArquivosSRT,
+  elementosTerminadosCom,
   removerElementosSeVazio,
   removerElementosSeIncluir,
   removerElementosSeApenasNumero,
