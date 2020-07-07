@@ -4,11 +4,11 @@ const path = require('path');
 function lerDiretorio(caminho) {
   return new Promise((resolve, reject) => {
     try {
-      const arquivos = fs.readdirSync(caminho);
-      const arquivosCompletos = arquivos.map((arquivo) => {
-        return path.join(caminho, arquivo);
-      });
-      resolve(arquivosCompletos);
+      const arquivos = fs
+        .readdirSync(caminho)
+        .map((arquivo) => path.join(caminho, arquivo));
+
+      resolve(arquivos);
     } catch (e) {
       reject(e);
     }
@@ -95,7 +95,7 @@ function ordenarPorAtributoNumerico(atributo, ordem = 'asc') {
     const asc = (objeto1, objeto2) => objeto1[atributo] - objeto2[atributo];
     const desc = (objeto1, objeto2) => objeto2[atributo] - objeto1[atributo];
 
-    return array.sort(ordem === 'asc' ? asc : desc);
+    return [...array].sort(ordem === 'asc' ? asc : desc);
   };
 }
 
