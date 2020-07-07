@@ -20,6 +20,9 @@ function TipoSeguro(valor) {
       const novoValor = !invalido() ? fn(valor) : valor;
       return TipoSeguro(novoValor);
     },
+    flatMap(fn) {
+      return this.map(fn).valor;
+    },
   };
 }
 
@@ -27,7 +30,7 @@ const original = 'Esse é um texto';
 const alterado = TipoSeguro(original)
   .map((texto) => texto.toUpperCase())
   .map((texto) => `${texto}!!!!`)
-  .map((texto) => texto.split('').join(' '));
+  .flatMap((texto) => texto.split('').join(' '));
 
 console.log(alterado);
-console.log(original, alterado.valor);
+console.log(original, alterado);
