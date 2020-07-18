@@ -34,6 +34,12 @@ Repositório contendo exercícios/projetos utilizando programação funcional co
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [RxJS](https://www.learnrxjs.io/)
 
+## :iphone: Screens
+
+<h1 align="center">
+    <img alt="Observables" src=".github/observables.png" width="900px">
+</h1>
+
 <a id="pre-requisitos"></a>
 
 ## :fire: Pré-requisitos
