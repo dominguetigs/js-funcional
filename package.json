@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dominguetigs/cod3r-js-funcional/issues"
   },
-  "homepage": "https://github.com/dominguetigs/cod3r-js-funcional#readme"
+  "homepage": "https://github.com/dominguetigs/cod3r-js-funcional#readme",
+  "dependencies": {
+    "rxjs": "^6.6.0"
+  }
 }
