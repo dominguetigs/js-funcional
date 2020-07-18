@@ -1,0 +1,20 @@
+{
+  "name": "cod3r-js-funcional",
+  "version": "1.0.0",
+  "description": "Javascript Funcional e Reativo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominguetigs/cod3r-js-funcional.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dominguetigs/cod3r-js-funcional/issues"
+  },
+  "homepage": "https://github.com/dominguetigs/cod3r-js-funcional#readme"
+}
