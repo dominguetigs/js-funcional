@@ -36,12 +36,16 @@ Repositório contendo exercícios/projetos utilizando programação funcional co
 
 ## :iphone: Screens
 
-<h1 align="center">
+<h1 align="center" style="background-color: #f2f2f2;">
     <img alt="Observables" title="#observables" src=".github/observables.png" width="900px">
     <img alt="Marble Diagram" title="#marble-diagram" src=".github/marble-diagram.png" width="900px">
     <img alt="Debounce Operator" title="#debounce-operator" src=".github/debounce-operator.png" width="900px">
     <img alt="GroupBy Operator" title="#groupby-operator" src=".github/groupby-operator.png" width="900px">
     <img alt="Lambda Calculus" title="#lambda-calculus-example" src=".github/lambda-calculus-example.png" width="900px">
+    <img alt="Lambda Calculus Sintaxe" title="#lambda-calculus-sintaxe" src=".github/lambda-calculus-sintaxe.png" width="900px">
+    <img alt="Lambda Calculus Abstração" title="#lambda-calculus-abstracao" src=".github/lambda-calculus-abstracao.png" width="900px">
+    <img alt="Lambda Calculus Aplicação" title="#lambda-calculus-aplicacao" src=".github/lambda-calculus-aplicacao.png" width="900px">
+    <img alt="Lambda Calculus B Reduction" title="#lambda-calculus-b-reduction" src=".github/lambda-calculus-b-reduction.png" width="900px">
 </h1>
 
 <a id="pre-requisitos"></a>
