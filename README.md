@@ -40,6 +40,7 @@ Repositório contendo exercícios/projetos utilizando programação funcional co
     <img alt="Observables" title="#observables" src=".github/observables.png" width="900px">
     <img alt="Marble Diagram" title="#marble-diagram" src=".github/marble-diagram.png" width="900px">
     <img alt="Debounce Operator" title="#debounce-operator" src=".github/debounce-operator.png" width="900px">
+    <img alt="GroupBy Operator" title="#groupby-operator" src=".github/groupby-operator.png" width="900px">
 </h1>
 
 <a id="pre-requisitos"></a>
