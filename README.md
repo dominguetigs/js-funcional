@@ -1,6 +1,13 @@
 <h1 align="center">
-    Javascript Funcional e Reativo
+    
 </h1>
+
+<h3 align="center">
+    <img alt="Logo do Curso" title="#logo-do-curso" width="300px" src=".github/logo-do-curso.png">
+    <br>
+    Javascript Funcional e Reativo  
+    <br>
+</h3>
 
 <p align="center">
   <a href="https://nodejs.org/en/" target="_blank">
