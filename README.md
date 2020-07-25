@@ -36,7 +36,7 @@ Repositório contendo exercícios/projetos utilizando programação funcional co
 
 ## :iphone: Screens
 
-<h1 align="center" style="background-color: #f2f2f2;">
+<h1 align="center">
     <img alt="Observables" title="#observables" src=".github/observables.png" width="900px">
     <img alt="Marble Diagram" title="#marble-diagram" src=".github/marble-diagram.png" width="900px">
     <img alt="Debounce Operator" title="#debounce-operator" src=".github/debounce-operator.png" width="900px">
