@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/dominguetigs/cod3r-js-funcional#readme",
   "dependencies": {
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "rxjs": "^6.6.0",
     "xmlhttprequest": "^1.8.0"
   }
